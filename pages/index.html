@@ -1,0 +1,250 @@
+<!-- 首页 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>国际环保宣传网站</title>
+    <!-- 导入全局css文件 -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- 导入导航栏css文件 -->
+    <link rel="stylesheet" href="../css/nav.css" />
+    <!-- 导入首页专属css文件 -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <!-- 导入封面所需文件 -->
+    <link rel="stylesheet" href="../css/poster.css" />
+    <!-- 谷歌字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../js/main.js" defer></script>
+    <!-- 导入加载导航栏的js文件 -->
+    <script src="../js/nav-load.js" defer></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="header-container"></div>
+
+    <!-- 封面 -->
+    <header class="header">
+      <div class="header__slogan">
+        <span class="header__slogan-word">world</span>
+        <span class="header__slogan-word">environment</span>
+        <span class="header__slogan-word">day</span>
+      </div>
+      <div class="header__title">
+        <div class="header__decoration header__decoration--left"></div>
+        <h1 class="header__title-text">爱自然</h1>
+        <h1 class="header__title-text">护环境</h1>
+        <div class="header__decoration header__decoration--right"></div>
+      </div>
+      <div class="header__date">2025.06.05——世界环境日</div>
+    </header>
+
+    <!-- 首页内容 -->
+    <div class="text-container">
+      <h1 class="gradient-text gradient-text--home">环境保护</h1>
+    </div>
+    <main class="home-container">
+      <!-- 轮播图部分 -->
+      <section class="carousel-section">
+        <div class="carousel">
+          <button class="carousel-nav prev">〈</button>
+          <button class="carousel-nav next">〉</button>
+          <img src="../assets/p1.jpg" alt="环保图片1" />
+          <img src="../assets/p2.png" alt="环保图片2" />
+          <img src="../assets/p3.jpg" alt="环保图片3" />
+          <img src="../assets/p4.png" alt="环保图片4" />
+          <img src="../assets/p5.jpg" alt="环保图片5" />
+        </div>
+      </section>
+
+      <!-- 科普博客部分 -->
+      <section class="blog-section">
+        <h2>科普博客</h2>
+        <div class="blog-grid">
+          <a
+            href="https://www.cenews.com.cn/news.html?aid=1383486"
+            class="blog-card"
+            target="_blank"
+          >
+            <img
+              src="../assets/blog1.png"
+              alt="生态环境部：对八类生态环境违法案件可以挂牌督办"
+            />
+          </a>
+          <a
+            href="https://www.greenpeace.org.cn/biodiversity/"
+            class="blog-card"
+            target="_blank"
+          >
+            <img src="../assets/blog2.jpg" alt="保护生物多样性" />
+          </a>
+          <a
+            href="https://www.ecoepn.com/?p=5732"
+            class="blog-card"
+            target="_blank"
+          >
+            <img
+              src="../assets/blog3.jpg"
+              alt="中国优质绿色产能助力世界能源转型"
+            />
+          </a>
+        </div>
+      </section>
+      <!-- 资讯板块 -->
+      <section class="news-section">
+        <div class="news-tabs">
+          <span class="tab active" data-tab="politics">时政要闻</span>
+          <span class="tab" data-tab="environment">环境要闻</span>
+          <span class="tab" data-tab="local">地方快讯</span>
+          <span class="tab" data-tab="video">视频新闻</span>
+        </div>
+        <div class="news-content">
+          <!-- 时政要闻 -->
+          <ul class="news-list" id="politics">
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/szyw/202505/t20250530_1120436.shtml"
+                >中央军委主席习近平签署命令 发布军事科研奖励条例</a
+              ><span>2025-05-30</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/szyw/202505/t20250527_1120171.shtml"
+                >习近平致信祝贺中国少年先锋队第九次全国代表大会召开</a
+              ><span>2025-05-26</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/szyw/202505/t20250523_1120009.shtml"
+                >李强主持召开国务院常务会议
+                审议通过《制造业绿色低碳发展行动方案（2025－2027年）》等</a
+              ><span>2025-05-23</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/szyw/202505/t20250523_1119995.shtml"
+                >习近平对精神文明建设工作作出重要指示强调：推动精神文明建设高质量发展
+                为强国建设民族复兴提供强大精神力量</a
+              ><span>2025-05-20</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/szyw/202505/t20250522_1119898.shtml"
+                >“把历史视角、战略思维，都落实到具体行动上来”——习近平总书记河南考察纪实</a
+              ><span>2025-05-15</span>
+            </li>
+          </ul>
+          <!-- 环境要闻 -->
+          <ul class="news-list" id="environment" style="display: none">
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/hjywnews/202505/t20250528_1120204.shtml"
+                >生态环境部党组书记孙金龙率团赴俄罗斯出席第十一届涅瓦国际生态大会并访问阿联酋</a
+              ><span>2025-05-28</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/hjywnews/202505/t20250527_1120142.shtml"
+                >生态环境部召开部常务会议</a
+              ><span>2025-05-25</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/hjywnews/202505/t20250520_1119772.shtml"
+                >孙金龙书记、黄润秋部长在《民主与法制》周刊发表署名文章《深入推进生态文明法治建设
+                不断强化美丽中国建设法治保障》</a
+              ><span>2025-05-22</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/hjywnews/202505/t20250518_1119639.shtml"
+                >生态环境部一周要闻（5.11—5.17）</a
+              ><span>2025-05-18</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/hjywnews/202505/t20250516_1119619.shtml"
+                >生态环境部党组召开会议</a
+              ><span>2025-05-10</span>
+            </li>
+          </ul>
+          <!-- 地方快讯 -->
+          <ul class="news-list" id="local" style="display: none">
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/dfnews/202505/t20250530_1120437.shtml"
+                >上海市委书记陈吉宁：持续放大绿色生态优势，助力长三角一体化高质量发展走深走实</a
+              ><span>2025-05-29</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/dfnews/202505/t20250526_1120081.shtml"
+                >湖南省省长毛伟明：打好打赢污染防治“夏季攻势”攻坚战持久战</a
+              ><span>2025-05-27</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/dfnews/202505/t20250523_1119984.shtml"
+                >广西壮族自治区党委书记陈刚：树牢时时放心不下的责任意识</a
+              ><span>2025-05-24</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/dfnews/202505/t20250514_1119429.shtml"
+                >青海省省长罗东川调研时强调
+                切实加大祁连山自然生态系统保护和建设力度</a
+              ><span>2025-05-19</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/dfnews/202505/t20250507_1119000.shtml"
+                >陕西省委书记赵一德调研时强调
+                推动生态版图从“浅绿”向“深绿”迈进</a
+              ><span>2025-05-11</span>
+            </li>
+          </ul>
+          <!-- 视频新闻 -->
+          <ul class="news-list" id="video" style="display: none">
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/spxw/202505/t20250523_1119967.shtml"
+                >视频丨多样生命 和美共生（央视《焦点访谈》）</a
+              ><span>2025-05-30</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/spxw/202505/t20250522_1119952.shtml"
+                >视频丨国际生物多样性日：守护万物共生
+                共绘和美画卷（央视《新闻联播》）</a
+              ><span>2025-05-28</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/spxw/202504/t20250424_1117557.shtml"
+                >视频丨一季度我国空气质量和地表水质量总体持续改善（央视《新闻联播》）</a
+              ><span>2025-05-26</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/spxw/202504/t20250417_1116925.shtml"
+                >视频丨国务院新闻办举行“新征程上的奋斗者”中外记者见面会（央视《新闻联播》）</a
+              ><span>2025-05-23</span>
+            </li>
+            <li>
+              <a
+                href="https://www.mee.gov.cn/ywdt/spxw/202504/t20250412_1114115.shtml"
+                >视频丨我国生态环境保护产业年营收规模超过2.2万亿元（新闻联播）</a
+              ><span>2025-05-20</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+/* 首页对应的css文件 */
+
+:root {
+  --color-grey-light-1: #f7f7f7;
+  --color-primary-light: #7ed56f;
+  --color-primary-dark: #28b485;
+  --color-blue: #2998ff;
+  --color-blue-dark: #5643fa;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+  --color-white: #fff;
+  --color-black: #000;
+  --box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  --color-red: #d8434e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+/* 轮播图部分 */
+.carousel-section {
+  background-color: var(--color-grey-light-1);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+}
+
+.carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img:first-child {
+  opacity: 1;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--color-primary-light);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0 1rem;
+}
+
+.carousel-nav.prev {
+  left: 1rem;
+}
+
+.carousel-nav.next {
+  right: 1rem;
+}
+
+/* 博客部分 */
+.blog-section {
+  background-image: linear-gradient(
+    to top right,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  padding: 3rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.blog-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.blog-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 添加博客标题文本 */
+.blog-card::after {
+  content: attr(data-title);
+  display: block;
+  margin-top: 1rem;
+  color: var(--color-grey-dark-3);
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* 资讯板块样式 */
+.news-section {
+  margin: 3rem 0;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.news-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--color-blue-dark);
+  margin-bottom: 1rem;
+  gap: 15rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: var(--color-grey-dark-3);
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.tab.active {
+  color: var(--color-primary-dark);
+  border-bottom: 2px solid var(--color-primary-dark);
+}
+
+.news-content {
+  padding-top: 1rem;
+}
+
+.news-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.news-list li {
+  width: max-content;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.news-list a {
+  text-decoration: none;
+  color: var(--color-grey-dark-3);
+  transition: color 0.3s;
+  font-size: 1.5rem;
+}
+
+.news-list a:hover {
+  color: var(--color-blue);
+}
+
+.news-list span {
+  color: var(--color-grey-dark);
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* 线性渐变文字 */
+.gradient-text {
+  display: inline-block;
+  font-size: inherit;
+  letter-spacing: 2rem;
+  background-image: linear-gradient(
+    to top left,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-family: "KaiTi", "楷体", serif;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.gradient-text--home {
+  font-size: 5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

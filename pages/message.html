@@ -1,0 +1,125 @@
+<!-- 第四个页面：留言板 -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 导入全局css文件 -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/message.css" />
+    <!-- 加载导航栏的js文件 -->
+    <script src="../js/nav-load.js" defer></script>
+    <script src="../js//message.js" defer></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <div id="header-container"></div>
+
+    <!-- 彩条 -->
+    <div class="color-bars">
+      <div class="color-bars__item color-bars__item--1">
+        <span class="color-bars__text">绿色生活，节能环保</span>
+      </div>
+      <div class="color-bars__item color-bars__item--2">
+        <span class="color-bars__text">保护环境，从我做起</span>
+      </div>
+      <div class="color-bars__item color-bars__item--3">
+        <span class="color-bars__text">节约用水，从点滴做起</span>
+      </div>
+      <div class="color-bars__item color-bars__item--4">
+        <span class="color-bars__text">低碳出行，绿色交通</span>
+      </div>
+      <div class="color-bars__item color-bars__item--5">
+        <span class="color-bars__text">拒绝白色污染</span>
+      </div>
+      <div class="color-bars__item color-bars__item--6">
+        <span class="color-bars__text">让地球多一片绿色</span>
+      </div>
+      <div class="color-bars__item color-bars__item--7">
+        <span class="color-bars__text">共建美丽中国</span>
+      </div>
+      <div class="color-bars__item color-bars__item--8">
+        <span class="color-bars__text">节能减排，利国利民</span>
+      </div>
+      <div class="color-bars__item color-bars__item--9">
+        <span class="color-bars__text">不乱扔垃圾，文明你我他</span>
+      </div>
+      <div class="color-bars__item color-bars__item--10">
+        <span class="color-bars__text">绿色消费，人人有责</span>
+      </div>
+      <div class="color-bars__item color-bars__item--11">
+        <span class="color-bars__text">爱护水源，珍惜生命</span>
+      </div>
+      <div class="color-bars__item color-bars__item--12">
+        <span class="color-bars__text">垃圾分类，举手之劳</span>
+      </div>
+      <div class="color-bars__item color-bars__item--13">
+        <span class="color-bars__text">保护森林，绿化家园</span>
+      </div>
+      <div class="color-bars__item color-bars__item--14">
+        <span class="color-bars__text">种下一棵树，收获万点绿</span>
+      </div>
+      <div class="color-bars__item color-bars__item--15">
+        <span class="color-bars__text">珍惜资源，永续发展</span>
+      </div>
+      <div class="color-bars__item color-bars__item--16">
+        <span class="color-bars__text">让蓝天白云永驻</span>
+      </div>
+      <div class="color-bars__item color-bars__item--17">
+        <span class="color-bars__text">节约能源，保护家园</span>
+      </div>
+      <div class="color-bars__item color-bars__item--18">
+        <span class="color-bars__text">地球只有一个</span>
+      </div>
+      <div class="color-bars__item color-bars__item--19">
+        <span class="color-bars__text">绿色校园，你我共建</span>
+      </div>
+      <div class="color-bars__item color-bars__item--20">
+        <span class="color-bars__text">美丽中国，绿色先行</span>
+      </div>
+    </div>
+    <div class="message-bord">
+      <!-- 留言滚动展示区 -->
+      <div class="message-scroll-area">
+        <div class="message__item message__item--1">
+          <div class="message__avatar message__avatar--1"></div>
+          <div class="message__text">欢迎来到留言板！</div>
+        </div>
+
+        <div class="message__item">
+          <div class="message__avatar message__avatar--2"></div>
+          <div class="message__text">爱自然，护环境！</div>
+        </div>
+
+        <div class="message__item">
+          <div class="message__avatar message__avatar--3"></div>
+          <div class="message__text">低碳出行，绿色交通！</div>
+        </div>
+
+        <div class="message__item">
+          <div class="message__avatar message__avatar--4"></div>
+          <div class="message__text">绿色生活，节能环保！</div>
+        </div>
+
+        <div class="message__item message__new">
+          <div class="message__avatar message__avatar--3"></div>
+          <div class="message__text">保护森林，绿化家园</div>
+        </div>
+      </div>
+
+      <!-- 发布留言 -->
+      <div class="publish">
+        <input
+          type="text"
+          class="publish__input"
+          id="messageInput"
+          placeholder="请输入您的留言..."
+          maxlength="100"
+        />
+        <button class="publish__btn" id="publishBtn">发布</button>
+      </div>
+    </div>
+  </body>
+</html>

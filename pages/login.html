@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <!-- 导入全局css文件 -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- 导入弹窗的css文件 -->
+    <link rel="stylesheet" href="../css/popup.css" />
+    <!-- 导入登录页面的css文件 -->
+    <link rel="stylesheet" href="../css/login.css" />
+    <script type="text/javascript" src="../js/popup.js" defer></script>
+    <script type="text/javascript" src="../js/login.js" defer></script>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main>
+      <form action="" class="login">
+        <div class="text-center login__text">
+          <p class="gradient-text">净界空间</p>
+        </div>
+        <div class="login__group">
+          <input
+            type="email"
+            placeholder="请输入你的邮箱"
+            class="login__input"
+            id="email"
+          />
+          <label for="email" class="login__label">请输入你的邮箱</label>
+          <input
+            type="password"
+            placeholder="请输入你的密码"
+            class="login__input"
+            id="password"
+          />
+          <label for="password" class="login__label">请输入你的密码</label>
+        </div>
+        <div class="login__group">
+          <button class="btn login__btn">登录</button>
+        </div>
+      </form>
+    </main>
+    <div class="setting">
+      <div class="setting__icon" id="setting__icon"></div>
+    </div>
+
+    <!-- 弹窗 -->
+    <div class="popup popup--hidden" id="popup-login">
+      <div class="popup__cover"><!-- 遮罩 --></div>
+      <div class="popup__content popup__content--login">
+        <div class="login__theme"><span>背景</span></div>
+        <div class="login__select">
+          <div class="login__bg-img login__select--1">
+            <img
+              src="../assets/登录页-图片06.jpg"
+              alt="封面"
+              class="login__select--img"
+            />
+          </div>
+          <div class="login__bg-img login__select--2">
+            <img
+              src="../assets/登录页-图片01.webp"
+              alt="封面"
+              class="login__select--img"
+            />
+          </div>
+          <div class="login__bg-img login__select--3">
+            <img
+              src="../assets/登录页-图片02.jpeg"
+              alt="封面"
+              class="login__select--img"
+            />
+          </div>
+          <div class="login__bg-img login__select--4">
+            <img
+              src="../assets/登录页-图片03.jpeg"
+              alt="封面"
+              class="login__select--img"
+            />
+          </div>
+          <div class="login__bg-img login__select--5">
+            <img
+              src="../assets/登录页-图片04.jpeg"
+              alt="封面"
+              class="login__select--img"
+            />
+          </div>
+          <div class="login__select--6" id="upload-img"></div>
+          <input
+            type="file"
+            accept="image/*"
+            style="display: none"
+            id="fileInput"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(126, 213, 111, 0.5),
+      rgba(40, 130, 133, 0.5)
+    ),
+    url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+  font-weight: bolder;
+  position: relative;
+  background-attachment: fixed;
+}
+.header__slogan {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.header__slogan-word {
+  letter-spacing: 3rem;
+}
+.header__slogan-word:first-child {
+  margin-right: 5rem;
+}
+.header__slogan-word:last-child {
+  margin-left: 5rem;
+}
+.header__title {
+  font-family: "Long Cang", cursive;
+  font-style: normal;
+  font-size: 5rem;
+}
+.header__title-text:not(:last-child) {
+  margin-right: 4rem;
+}
+.header__date {
+  position: absolute;
+  bottom: 8rem;
+  font-size: 2.3rem;
+  font-family: Arial;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+.header__decoration {
+  font-size: 5rem;
+  font-weight: lighter;
+  position: relative;
+}
+.header__decoration::before {
+  content: "¬";
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+.header__decoration--left {
+  transform: rotate(-90deg);
+  top: 0rem;
+  left: -1.1rem;
+}
+.header__decoration--right {
+  transform: rotate(90deg);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header__title {
+  display: flex;
+}

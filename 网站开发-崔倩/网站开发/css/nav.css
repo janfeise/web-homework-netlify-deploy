@@ -1,0 +1,6 @@
+/* 导航栏对应的css文件 */
+ul {
+  color: var(--color-primary);
+  display: flex;
+  gap: 2rem;
+}
