@@ -38,3 +38,10 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
+/* google fonts */
+@font-face {
+  font-family: "";
+  src: url("./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"),
+    url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}

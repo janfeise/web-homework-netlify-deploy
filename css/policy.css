@@ -1,0 +1,134 @@
+body {
+  height: 100vh;
+  background-image: url("../assets/history-05.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 9rem auto;
+  padding: 0 20px;
+  /* padding-bottom: 10rem; */
+  font-size: 2rem;
+
+  color: var(--color-grey-light-2);
+}
+
+.gradient-text {
+  letter-spacing: 2rem;
+  background-color: var(--color-grey-light-1);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-family: "KaiTi", "楷体", serif;
+  text-align: center;
+  font-size: 8rem;
+  margin-bottom: 5rem;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.policy-card {
+  height: max-content;
+  padding: 0 2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(126, 213, 111),
+    rgba(40, 130, 133)
+  );
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+  height: max-content;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.card-subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 1.6rem;
+}
+
+.policy-list {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.policy-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.policy-list li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.highlight-box {
+  background-color: var(--light-bg);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(126, 213, 111),
+    rgba(40, 130, 133)
+  );
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.stat-label {
+  font-size: 1.3rem;
+}

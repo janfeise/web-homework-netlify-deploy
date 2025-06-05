@@ -18,6 +18,9 @@ const welcome = function () {
   }
 };
 
+/**
+ * 导航栏颜色在首页为透明，其它页面为绿色
+ */
 const navColor = function () {
   const currentPath = window.location.pathname;
   const navElement = document.querySelector(".navbar");
@@ -25,6 +28,8 @@ const navColor = function () {
     currentPath === "/pages/" || currentPath === "/pages/index.html";
   if (!judge && navElement) {
     navElement.classList.add("nav-active");
+  } else if (judge && navElement) {
+    navElement.style.animation = "fadeInUp 0.6s ease-out forwards";
   }
 };
 
