@@ -24,7 +24,7 @@ const welcome = function () {
 const navColor = function () {
   const currentPath = window.location.pathname;
   const navElement = document.querySelector(".navbar");
-  const judge = currentPath === "/index.html";
+  const judge = currentPath === "/index.html" || currentPath === "/";
   console.log(currentPath);
   if (!judge && navElement) {
     navElement.classList.add("nav-active");
